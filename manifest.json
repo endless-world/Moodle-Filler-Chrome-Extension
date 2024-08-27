@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "version": "1.0",
+  "name": "MoodleAutoFiller (for Moodle)",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "storage",
+    "activeTab",
+    "declarativeContent"
+  ]
+}
